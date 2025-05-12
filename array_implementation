@@ -1,0 +1,71 @@
+'''Array implementation:
+
+1. Lists – Basic Array'''
+
+numbers = [1, 2, 3, 4, 5]
+print(numbers[2])  # Output: 3
+
+
+'''2. Stacks – Last In First Out (LIFO)'''
+
+stack = []
+stack.append(50)
+stack.append(30)
+stack.append(80)
+print(stack.pop())  # Output: 80
+print(stack)        # Output: [50, 30]
+
+'''
+#3. Queues – First In First Out (FIFO)
+
+queue = deque()
+queue.append(1)
+queue.append(2)
+queue.append(3)
+print(queue.popleft())  # Output: 1
+print(queue)            # Output: deque([2, 3])
+'''
+
+
+'''4. Buffers – Temporary Storage
+#Used in streaming or processing data chunks.'''
+
+buffer = []
+buffer.append("chunk1")
+buffer.append("chunk2")
+# Process buffer contents
+for data in buffer:
+    print("Processing:", data)      # Output: Processing: chunk1
+                                    # Output: Processing: chunk2
+
+'''5. Matrices / 2D Arrays – Using Nested Lists
+#Representing a 2x2 matrix.'''
+
+matrix = [
+    [1, 2],
+    [3, 4]
+]
+print(matrix[1][0])  # Output: 3
+
+
+
+'''6. Lookup Tables – Fast Access by Index
+#Accessing items quickly using indices.'''
+
+colors = ['red', 'green', 'blue']
+print(colors[1])  # Output: green
+
+
+
+'''7. ✅ Data Processing – Using NumPy Arrays
+Efficient computation with NumPy.'''
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+print(arr * 2)       # Output: [2 4 6 8]
+print(np.mean(arr))  # Output: 2.5
+
+
+
+
